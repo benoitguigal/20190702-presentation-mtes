@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Data Science @MTES</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,15 +26,201 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
 				<section data-markdown>
 					<textarea data-template>
-						## Page title
+						## Data Science @MTES
 
-						A paragraph with some text and a [link](http://hakim.se).
+						Benoît Guigal
+
+						2 juillet 2019
+
+						Startups d'état 🚀 Kelrisks & Trackdéchets 🚀
 					</textarea>
 				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Bonjour 👋
+
+						Je m'appelle Benoît Guigal
+
+						* Startups d'État Kelrisks, Trackdéchets
+						* Ex - Entrepreneur d'Intérêt Général (défi Hopkins)
+						* Ex - Startups: Captain Dash, Figure
+						* Blog écologie [https://benoitguigal.fr/blog/](https://benoitguigal.fr/blog/)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Plan
+
+						* Data Science ?
+						* Boite à outils
+						* Géocodage @Kelrisks
+						* Consolidation de bases @Trackdéchets
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Data science ?
+
+						* Collecter
+						* Stocker, Modéliser
+						* Explorer (stats)
+						* Visualiser, Cartographier
+						* Transformer
+						* Industrialiser
+						* ~Machine learning, IA~
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						<img src="./images/datascience.jpg" alt="datascience" style="width:1000px;"/>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Boite à outils
+
+						* Python
+							* Pandas (Data Analysis)
+							* Peewee (ORM)
+							* Jupyter notebook
+							* unittest
+						* SQL
+						* Embulk (data loader)
+						* Airflow (data pipeline)
+						* QGIS
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Géocodage @Kelrisks
+						<img src="./images/cadastre.png" alt="cadastre" style="width:600px;"/>
+
+						[https://github.com/MTES-MCT/kelrisks-datascience/]([https://github.com/MTES-MCT/kelrisks-datascience/])
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+
+							> Le géocodage consiste à retrouver une adresse au sein d’un référentiel
+							(par exemple la Base Adresse Nationale).
+								Ceci permet d’obtenir sa position géographique mais aussi une adresse correctement structurée.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							* *64 Avenue du Docteur Durand, 94110 Arcueil*
+							* *64 av. du Dr Durand Arcueil*
+							* *Lieu-dit La Grande Pinte, Saint-Ouen-l-Aumone*
+							* *Angle de la rue des Acqueducs et de la rue de la Comète à Gentilly*
+							* *43 - 49 rue Jean Jacques Rousseau 94250 Gentilly*
+							* *route de Fontainebleau 94250 Gentilly*
+							* *Centre Commercial Moulin à Franconville*
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Addok: "Search engine for address. Only address"
+
+						* Recherche en texte intégral "floue"
+						* [Sous le capot du géocodeur addok @cquest](https://medium.com/@cq94/sous-le-capot-du-g%C3%A9ocodeur-addok-398ce9b2b1fa)
+						* BAN [adresse.data.gouv.fr](https://adresse.data.gouv.fr/)
+						* OSM BANO [bano.addok.xyz](http://bano.addok.xyz)
+						* OSM POI [poi.addok.xyz](http://poi.addok.xyz)
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Géocodage ICPE Ile-de-France avec adresse.data.gouv.fr
+
+						* ~ 26000 établissements
+						* ~ 13000 non géolocalisés ou "centroïde commune"
+						* ~ 6000 géolocalisations précises récupérées
+
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					### Industrialisation
+					<img src="./images/pipeline.png" alt="pipeline" style="width:800px;"/>
+					<img src="./images/gantt.png" alt="gantt" style="width:800px;"/>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Consolidation de bases de données @Trackdéchets
+						<img src="./images/verif-presta.png" alt="verif-presta" style="width:400px;"/>
+
+						[https://github.com/MTES-MCT/trackdechets-datascience/]([https://github.com/MTES-MCT/trackdechets-datascience/])
+					</textarea>
+				</section>
+
+				<section data-transition="none-out slide-in">
+					<img src="./images/consolidation-1.png" alt="consolidation-1" style="width:500px;"/>
+				</section>
+				<section data-transition="none-in slide-out">
+					<img src="./images/consolidation-2.png" alt="consolidation-2" style="width:500px;"/>
+				</section>
+				<section data-markdown>
+					```
+					<textarea data-template>
+							### ICPE x IREP
+
+							```
+							SELECT
+								a.*,
+								b.adresse as irep_adresse,
+								b.code_postal as irep_code_postal,
+								b.commune as irep_commune,
+								b.departement as irep_departement,
+								b.coordonnees_X as irep_coordonnees_X,
+								b.coordonnees_Y as irep_coordonnees_Y
+							FROM icpe as a
+							LEFT JOIN irep as b
+							ON a.code_s3ic = b.code_s3ic
+							```
+						</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template >
+						### ICPE x SIRENE
+						<img src="./images/icpe_x_sirene.png" alt="icpe_x_sirene" style="width:1000px;"/>
+						<img src="./images/matching.png" alt="matching" style="width:500px;"/>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template >
+						### Reference matching
+
+						Faire une jointure entre une table de données bruitée
+						et une table de référence
+
+						* fuzzywuzzy
+						* dedup
+						* elasticsearch
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template >
+						### The merge machine
+						<img src="./images/mergemachine.png" alt="mergemachine" style="width:1000px;"/>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template >
+						### Construction d'une API
+						<img src="./images/api-proxy.png" alt="api-proxy" style="width:700px;"/>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template >
+						### Merci !
+						<img src="./images/giphy.gif" alt="giphy" style="width:400px;"/>
+					</textarea>
+				</section>
+
+
 			</div>
 		</div>
 
